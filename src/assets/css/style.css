@@ -1,0 +1,559 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-width: 1253px;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #15328A;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+header .personal {
+  float: right;
+  line-height: 90px;
+  color: #fff;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+header .personal span {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.personal span img {
+  width: 24px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+aside {
+  width: 14.5%;
+  min-width: 182px;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px 0px rgba(209, 209, 209, 0.5);
+  z-index: 1;
+}
+
+.aside {
+  width: 100%;
+}
+
+.aside li {
+
+  height: 56px;
+  line-height: 56px;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #15328A;
+}
+
+.aside li a {
+  padding-left: 40px;
+  display: block;
+}
+
+.aside .router-link-exact-active {
+  color: #fff;
+  background: #15328AFF;
+}
+
+.func {
+  position: absolute;
+  left: 100px;
+  top: 190px;
+  padding: 20px;
+  width: 503px;
+  background: rgba(35, 47, 93, 1);
+  border: 1px solid rgba(26, 36, 53, 1);
+}
+
+.func .title {
+  font-size: 14px;
+  color: #D6E0DCFF;
+  border-bottom: 1px solid #3C4E84FF;
+  line-height: 40px;
+}
+
+.func .fbox {
+  margin-top: 15px;
+  padding: 20px 0;
+  background: rgba(58, 73, 131, 1);
+  box-sizing: border-box;
+}
+
+.func .fbox .group {
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  padding-left: 10px;;
+  /* height: 50px; */
+}
+
+.func .fbox .group:last-child {
+  margin-bottom: 0;
+}
+
+.fbox .group .change {
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.group .change span {
+  width: 64px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  border: #fff 1px solid;
+  color: #fff;
+
+  margin-left: 10px;
+}
+
+.group.cancho .change span {
+  opacity: 0.4;
+}
+
+.group .change span.act {
+  opacity: 1;
+}
+
+.group .change span:nth-child(1) {
+  margin-left: 0px;
+}
+
+.group .change .photo {
+  width: 100px;
+  height: 70px;
+  background: #000;
+  overflow: hidden;
+}
+
+.group .change .photo img {
+  width: 100%;
+}
+
+.group .change .filebox {
+  position: relative;
+}
+
+.group .change .filebox input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.fbox .group .bgtype {
+  height: 20px;
+  margin-left: 80px;
+  background: rgba(188, 202, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fbox .group .bgtype span {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#aside {
+  width: 100%;
+}
+
+.asidelist li {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #ABB1BDFF;
+}
+
+.asidelist .active {
+  background: rgba(35, 47, 93, 1);
+}
+
+.insaside {
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  box-sizing: border-box;
+  background: rgba(40, 56, 103, 1);
+  border: 1px solid rgba(26, 36, 53, 1);
+  z-index: 2;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  padding-left: 14.5%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.content .cbox {
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  background: rgba(249, 249, 249, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.content .cbox .l-box {
+  width: 29%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  margin-left: 45px;
+  padding: 22px;
+  position: relative;
+}
+
+.icbox-top {
+  line-height: 66px;
+  border-bottom: 1px solid #D2D2D2;
+  text-align: center;
+}
+
+.icbox-con {
+  margin: 2rem 0 1rem;
+  height: 12.65rem;
+  overflow: hidden;
+}
+
+.icbox-con li {
+  border: 1px solid #eee;
+  float: left;
+  margin: 0.75rem 0.5rem;
+  line-height: 2.625rem;
+}
+
+.icbox-con li:hover {
+  background: #f2f2f2;
+}
+
+.icbox-con li a {
+  display: block;
+  padding: 0 0.625rem;
+}
+
+.icbox-more {
+
+  margin-left: 0.6rem;
+}
+
+.icbox-more a {
+  color: #283867;
+}
+
+.icbot {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.icbot a {
+  line-height: 2.5rem;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  background: #15328A;
+  color: #fff;
+  display: inline-block;
+}
+
+.icbot a:hover {
+  background: #2E8CFA;
+}
+
+.cardlistbg {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background: rgba(249, 249, 249, 1);
+}
+
+.cardlistcon {
+  background: #fff;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+}
+
+.intab {
+  padding: 1rem 0;
+  border-bottom: #D2D2D2 1px solid;
+}
+
+.intab span {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  color: #5E5E5E;
+}
+
+.intab span.act {
+  font-size: 1.5rem;
+  color: #283867;
+  font-weight: bold;
+
+}
+
+.searchbox {
+  margin: 1.5rem 0;
+}
+
+.searchbox input {
+  border: 1px solid #979797;
+  line-height: 2.2rem;
+  height: 2.2rem;
+  color: #1F2A54;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.searchbox .u-btn {
+  width: 5.125rem;
+  margin-left: 1rem;
+}
+
+.incardlist li {
+  width: 24.25%;
+  margin-right: 1%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.incardlist li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.incardlist li .imgbox {
+  overflow: hidden;
+  height: calc((85.5vw - 6rem) * 0.2425 * 225 / 400);
+  min-height: 134px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.incardlist li .tt {
+  line-height: 3.125rem;
+  height: 3.125rem;
+  padding: 0 0.5rem;
+}
+
+.sortbox {
+  padding: 1.5rem 0;
+}
+
+.sortbox span {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.el-dialog__header {
+  text-align: center;
+}
+
+.el-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 !important;
+  transform: translate(-50%, -50%);
+  max-height: calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+}
+
+.el-dialog__body {
+  overflow: auto
+}
+
+.editors {
+
+  line-height: 1.2;
+}
+
+.container {
+  position: relative;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container * {
+  outline: none;
+}
+
+
+
+.portlet-header {
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.2rem;
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.place {
+  height: 3rem;
+  border: 1px #333 dashed;
+}
+
+.cardbgbox {
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.cimgbox {
+  position: relative;
+  overflow: hidden;
+}
+
+.cimgbox img {
+  width: 100%;
+}
+
+.cimgbox input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.container .ui-icon, .container .ui-widget-content .ui-icon {
+  display: none !important;
+}
+
+.container:hover .ui-icon, .container:hover .ui-widget-content .ui-icon {
+  display: block !important;
+}
+
+.styleCon {
+  position: fixed;
+  left: 100px;
+  top: 0;
+  width: 505px;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 90px;
+}
+
+.styleConScroll {
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 4rem 1.5rem 1.5rem;
+  position: relative;
+  background: #232F5D;
+  z-index: 2;
+}
+
+.styleConScrollNav {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0.6rem;
+  left: 0;
+  padding: 0 1.5rem;
+
+}
+
+.styleConScrollNav ul {
+  border-bottom: 1px solid #3C4E84;
+}
+
+.styleConScrollNav li {
+  float: left;
+  line-height: 3rem;
+  margin-right: 2rem;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.styleConScrollNav li.act {
+  color: #29C287
+}
+
+.stylebox {
+  border-bottom: 1px #666 dashed;
+  padding: 1rem 0;
+}
+
+.stylebox:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3) inset;
+}
+
+.chartsBox {
+  border-bottom: 1px #666 dashed;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.chartsBox:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3) inset;
+}
+
+.chartsBox img {
+  max-width: 100%;
+}
+
+.cardbgbigbox {
+  padding: 2rem;
+  min-height: 448px;
+  background: #fff;
+  margin: 0 auto;
+  width: 616px;
+  position: relative
+}
+.cardbgsbox{
+  position: relative;
+  box-sizing: border-box;
+}
+.cardbgsbox:hover .portlet-header{
+  display: block;
+}
+.cardbgsbox:hover {
+  border: 1px #2b64f3 dashed;
+}
+.cardbgsbox.noline:hover {
+  border: 0;
+}
